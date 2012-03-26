@@ -1,6 +1,6 @@
-class CreateBaskets < ActiveRecord::Migration
+class CreateActivities < ActiveRecord::Migration
   def change
-    create_table :baskets do |t|
+    create_table :activities do |t|
       t.string :name
       t.text :description
 

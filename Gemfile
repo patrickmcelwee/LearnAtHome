@@ -5,10 +5,16 @@ gem 'heroku'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development, :test do
+group :development do
+  gem 'rspec-rails'
+  gem 'sqlite3'
+end
+
+group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'sqlite3'
+  gem 'shoulda-matchers'
 end
 
 group :production do

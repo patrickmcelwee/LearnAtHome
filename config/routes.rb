@@ -1,4 +1,6 @@
 SchoolPlanner::Application.routes.draw do
+  resources :activities
+
   resources :baskets
 
   # The priority is based upon order of creation:
